@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Summary</title>
+  <title>Cloudiness</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!--Navbar adjustments-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand text-white" href="index.html" >Latitude</a>
+            <a class="navbar-brand text-white" href="index.html">Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+                
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">    
                     <li class="nav-item dropdown">
@@ -42,47 +42,45 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> 
     </nav>
-    
-    <div class="container content">    
+    <!--cloudiness content adjustments-->
+    <div class="container content">
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
-                    <h3>Summary: Latitude vs. X </h3>
+                    <h3>Cloudiness</h3>
                     <hr>
-                    <div class="thumbnail">
-                        <img class="img-thumbnail float-left" src="Resources/assets/images/Fig1.png " width="50%" alt="temperature">
-                    </div>
-                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  </p> 
-                    
-                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    <img src="Resources/assets/images/Fig3.png" width="100%" alt="cloudiness">
+                    <br>
+                    <p>This plot doesn't necessarily show any trend between latitude and cloudiness. We can't say cloudiness increase or decrease when latitude get closer to the equator. Clouds tend to form in abundance in the middle latitudes 60 degrees north and south of the equator. This is where the edges of polar and mid latitude circulation cells collide and push air upward. </p>
                 </div>
             </div>
+            <!--visualizations container adjustments-->
             <div class="col-md-4">
                 <div class="col-md-12">
                     <h3>Visualizations</h3>
                     <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" width="100%"  alt="temperature">
-                            </a> 
+                            <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" width="100%" alt="temprature"></a>
                         </div>
+                       
                         <div class="col-3 col-md-6">
                             <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
                         </div>
-                   
+                    
                         <div class="col-3 col-md-6">
-                            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
+                            <a href="cloudiness.html"><img class="pic" src="Resources/assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
                         </div>
-
+                        
                         <div class="col-3 col-md-6">
-                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png"width="100%"  alt="wind speed"></a>
+                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" width="100%" alt="windspeed"></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>            
+        </div>    
     </div>
     
 </body>
